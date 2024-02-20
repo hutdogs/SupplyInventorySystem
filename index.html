@@ -1,10 +1,216 @@
-<html>
-  <head>
-    <title>
-      Supply Inventory System
-    </title>
-  </head>
-  <body>
-    <h1>HELLO JOSHUA</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie CLUB</title>
+    <link rel="stylesheet" href="newstyle.css">
+</head>
+<body>
+    
+    
+    <div class="wrapper">
+        
+        <div class="search-block">
+        <ul class="nav">
+            <li><a href="index.html"><img src="logo.png" alt=""></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">TV Series</a></li>
+            <li><a href="#movie">Movie</a></li>
+            <li><a href="#anime">Anime</a></li>
+            <li><a href="#home">News</a></li>
+            <li><a href="#about">Join Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+            <form id="search-form">
+                <input type="text" id="query" placeholder="Search movies..." />
+                <button class="btn" type="submit">Search</button>
+            </form>
+
+            <ul id="searchResults"></ul>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/banner1.webp" style="width:100%">
+        <div class="text">High Cookie</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/banner2.webp" style="width:100%">
+        <div class="text">Once Upon A Boyhood</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/banner3.webp" style="width:100%">
+        <div class="text">The Deal</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/banner4.webp" style="width:100%">
+        <div class="text">Tokyo Revengers</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/banner5.webp" style="width:100%">
+        <div class="text">The Kidnapping Day</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+    <!-- <h4>Resize the browser window to see the effect.</h4> -->
+    <h2 class="galleryTitle">Trending Now</h2>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/myDemon.webp">
+          <img src="img/myDemon.webp" alt="My Demon" width="250" height="300">
+        </a>
+        <div class="desc">My Demon</div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/docSlump.webp">
+          <img src="img/docSlump.webp" alt="Doctor Slump" width="250" height="300">
+        </a>
+        <div class="desc">Doctor Slump</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/welcome-to-ssamdalrii.webp">
+          <img src="img/welcome-to-ssamdalrii.webp" alt="Welcome to Samdalri" width="250" height="300">
+        </a>
+        <div class="desc">Welcome to Samdalri</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/myManIsCupid.webp">
+          <img src="img/myManIsCupid.webp" alt="My Man is Cupid" width="250" height="300">
+        </a>
+        <div class="desc">My Man is Cupid</div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+
+    <h2 class="galleryTitle" id="movie">Movie</h2>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/avengers.webp">
+          <img src="img/avengers.webp" alt="Avengers" width="250" height="300">
+        </a>
+        <div class="desc">Avengers: Infinity War</div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/harryPotter.webp">
+          <img src="img/harryPotter.webp" alt="Harry Potter" width="250" height="300">
+        </a>
+        <div class="desc">Harry Potter</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/twilight.webp">
+          <img src="img/twilight.webp" alt="Twilight" width="250" height="300">
+        </a>
+        <div class="desc">Twilight</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/theMarvels.webp">
+          <img src="img/theMarvels.webp" alt="The Marvels" width="250" height="300">
+        </a>
+        <div class="desc">The Marvels</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <h2 class="galleryTitle" id="anime">Anime</h2>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/onePiece.webp">
+          <img src="img/onePiece.webp" alt="One Piece" width="250" height="300">
+        </a>
+        <div class="desc">One Piece</div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/SoloLevel.webp">
+          <img src="img/SoloLevel.webp" alt="Solo Leveling" width="250" height="300">
+        </a>
+        <div class="desc">Solo Leveling</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/SLF.webp">
+          <img src="img/SLF.webp" alt="Shangri-la Frontier" width="250" height="300">
+        </a>
+        <div class="desc">Shangri-La Frontier</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img/tokyoRev3.webp">
+          <img src="img/tokyoRev3.webp" alt="Tokyo Revengers 3" width="250" height="300">
+        </a>
+        <div class="desc">Tokyo Revengers 3</div>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div>
+  <footer>
+    <p>&copy; 2024 BBCD Movies. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="img/fb.png" alt="Facebook" width="30" height="30"></a>
+        <a href="https://www.instagram.com"><img src="img/insta.png" alt="Instagram" width="30" height="30"></a>
+    </div>
+  </footer>
+</div>
+
+
+
+<script src="search.js"></script>
+<script src="slide.js"></script>
+
+  
+</body>
 </html>
