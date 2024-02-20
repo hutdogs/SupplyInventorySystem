@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie CLUB</title>
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <script src="https://kit.fontawesome.com/c44a2e7f96.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+
+        <div class="search-block">
+            <ul class="nav">
+                <li><a href="index.html"><img src="logo.png" alt=""></a></li>
+                <li><a href="#home">Home</a></li>
+                <div class="dropdown" style="float: right;">
+                    <li class="dropbtn">Categories</li>
+                    <div class="dropdown-content">
+                        <a href="ratedG.html" class="ratedG">Rated G</a>
+                        <a href="index.html" class="ratedPG">Rated PG-13</a>
+                        <a href="#" class="ratedR" style="background-color: red;">Rated R</a>
+                    </div>
+                </div>
+
+                <li><a href="#trending">Trending</a></li>
+                <li><a href="#movie">Movie</a></li>
+                <li><a href="#anime">Anime</a></li>
+                <li><a href="#home">News</a></li>
+                <li><a href="#about">Join Us</a></li>
+            </ul>
+            <form id="search-form">
+                <input type="text" id="query" placeholder="Search movies..." />
+                <button class="btn" type="submit">Search</button>
+            </form>
+
+            <ul id="searchResults"></ul>
+        </div>
+
+        <a href="javascript:" id="return-to-top"><i class="fa-solid fa-arrow-up fa-2xl"></i></a>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="img/banner1.webp" style="width:100%">
+            <div class="text">High Cookie</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="img/banner2.webp" style="width:100%">
+            <div class="text">Once Upon A Boyhood</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="img/banner3.webp" style="width:100%">
+            <div class="text">The Deal</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="img/banner4.webp" style="width:100%">
+            <div class="text">Tokyo Revengers</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="img/banner5.webp" style="width:100%">
+            <div class="text">The Kidnapping Day</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <!-- <h4>Resize the browser window to see the effect.</h4> -->
+    <h2 class="galleryTitle" id="trending">Trending Now</h2>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-trend.webp">
+                <img src="img/r-trend.webp" alt="Sex Life" width="250" height="300">
+            </a>
+            <div class="desc">Sex Life</div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-trend2.webp">
+                <img src="img/r-trend2.webp" alt="Love Affairs in the Afternoon" width="250" height="300">
+            </a>
+            <div class="desc">Love Affairs in the Afternoon</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-trend3.webp">
+                <img src="img/r-trend3.webp" alt="Normal People" width="250" height="300">
+            </a>
+            <div class="desc">Normal People</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-trend4.webp">
+                <img src="img/r-trend4.webp" alt="The Walking Dead" width="250" height="300">
+            </a>
+            <div class="desc">The Walking Dead</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <h2 class="galleryTitle" id="movie">Movie</h2>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-movie.webp">
+                <img src="img/r-movie.webp" alt="Avengers" width="250" height="300">
+            </a>
+            <div class="desc">The Forbidden Play</div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-movie2.webp">
+                <img src="img/r-movie2.webp" alt="Harry Potter" width="250" height="300">
+            </a>
+            <div class="desc">Gannibal</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-movie3.webp">
+                <img src="img/r-movie3.webp" alt="Twilight" width="250" height="300">
+            </a>
+            <div class="desc">Serial Expirements Lain</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-movie4.webp">
+                <img src="img/r-movie4.webp" alt="The Marvels" width="250" height="300">
+            </a>
+            <div class="desc">Not Me</div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <h2 class="galleryTitle" id="anime">Anime</h2>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-anime.webp">
+                <img src="img/r-anime.webp" alt="Sex Is Part of Undercover Agents Job?" width="250" height="300">
+            </a>
+            <div class="desc">Sex Is Part of Undercover Agents Job?</div>
+        </div>
+    </div>
+
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-anime2.webp">
+                <img src="img/r-anime2.webp" alt="XL Boss" width="250" height="300">
+            </a>
+            <div class="desc">XL Boss</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-anime3.webp">
+                <img src="img/r-anime3.webp" alt="Shangri-la Frontier" width="250" height="300">
+            </a>
+            <div class="desc">Adam's Sweet Agony</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="img/r-anime4.webp">
+                <img src="img/r-anime4.webp" alt="Hokaido Gals" width="250" height="300">
+            </a>
+            <div class="desc">Hokkaido Gals</div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div>
+        <footer>
+            <p>&copy; 2024 BBCD Movies. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com"><img src="img/fb.png" alt="Facebook" width="30" height="30"></a>
+                <a href="https://www.instagram.com"><img src="img/insta.png" alt="Instagram" width="30" height="30"></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+<script src="slide.js"></script>
+<script src="searchR.js"></script>
+<script src="scrollEffect.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+  // ===== Scroll to Top ==== 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+  });
+  $('#return-to-top').click(function () {      // When arrow is clicked
+    $('body,html').animate({
+      scrollTop: 0                       // Scroll to top of body
+    }, 500);
+  });
+</script>
+</body>
+
+</html>

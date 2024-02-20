@@ -348,25 +348,3 @@ div.desc {
     display: table;
     clear: both;
 }
-
-
-#searchResults {
-    list-style: none;
-    padding: 0;
-}
-
-#searchResults li {
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-}
-
-#searchResults img {
-    width: 80px; /* Adjust the image width as needed */
-    height: auto;
-    margin-right: 20px;
-}
-
-#searchResults span {
-    font-size: 18px; /* Adjust the title font size as needed */
-}
