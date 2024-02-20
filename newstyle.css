@@ -283,7 +283,7 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 50vh;
+  width: 45vh;
   height: 50vh;
   border-radius: 5%;
 }
@@ -357,6 +357,49 @@ footer p {
   opacity: 0.8;
 }
 
+.dropbtn {
+  /* background-color: #4CAF50; */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .ratedG:hover {background-color: green;}
+.dropdown-content .ratedPG:hover {background-color: blue;}
+.dropdown-content .ratedR:hover {background-color: red;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: purple;
+}
+
 
 #searchResults {
   list-style: none;
@@ -370,7 +413,8 @@ footer p {
 }
 
 #searchResults img {
-  width: 120px ; /* Adjust the image width as needed */
+  width: 200px ; /* Adjust the image width as needed */
+  padding: 10px;
   height: auto;
   margin-right: 20px;
 }
@@ -379,3 +423,51 @@ footer p {
   font-size: 18px; /* Adjust the title font size as needed */
   color: white;
 }
+
+#trending, #movie, #anime {
+  height: auto;
+}
+
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(73, 122, 255, .8);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: rgb(73, 122, 255);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+

@@ -4,16 +4,17 @@ const searchResultsContainer = document.getElementById('searchResults');
 
 function searchMovies(query) {
     const movies = [
-        { title: "The Shawshank Redemption", image: "img/avengers.webp" },
-        { title: "The Godfather", image: "img/docSlump.webp" },
-        { title: "The Dark Knight", image: "harryPotter.webp" },
-        { title: "Pulp Fiction", image: "pulp_fiction.jpg" },
-        { title: "Fight Club", image: "fight_club.jpg" },
-        { title: "Forrest Gump", image: "forrest_gump.jpg" },
-        { title: "Inception", image: "inception.jpg" },
-        { title: "The Matrix", image: "matrix.jpg" },
-        { title: "The Lord of the Rings: The Fellowship of the Ring", image: "lotr_fellowship.jpg" },
-        { title: "Schindler's List", image: "schindlers_list.jpg" }
+        { title: "Avegers Infinity War", image: "img/avengers.webp" },
+        { title: "Doctor Slump", image: "img/docSlump.webp" },
+        { title: "Harry Potter", image: "img/harryPotter.webp" },
+        { title: "Classroom of the Elite", image: "img/g-anime.webp" },
+        { title: "Mashle: Magic and Muscles", image: "img/g-anime2.webp" },
+        { title: "Shangri-La Frontier", image: "img/SLF.webp" },
+        { title: "Tokyo Revengers 3", image: "img/tokyoRev3.webp" },
+        { title: "Twilight", image: "img/twilight.webp" },
+        { title: "The Marvels", image: "img/theMarvels.webp" },
+
+
     ];
 
     const searchResults = movies.filter(movie => movie.title.toLowerCase().includes(query));
